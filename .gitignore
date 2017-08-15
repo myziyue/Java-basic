@@ -12,9 +12,11 @@ Desktop.ini
 *.log
 *.bak
 *.swp
+*.iml
 
 # Compiled class file
 *.class
+out
 
 # Log file
 *.log
