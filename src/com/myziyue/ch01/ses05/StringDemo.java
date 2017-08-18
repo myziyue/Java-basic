@@ -23,5 +23,8 @@ public class StringDemo {
             System.out.println(result[i]);
             i++;
         }
+
+        System.out.println(names.equals(nameStr));
+        System.out.println("World".equalsIgnoreCase("world"));
     }
 }
