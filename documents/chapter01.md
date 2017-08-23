@@ -113,7 +113,18 @@ Math.floorMod()求余数
 
 使用equals方法检查两个字符串是否相等。不考虑大小写比较两个字符串，可以使用equalsIgnoreCase方法。
 
+现在，Unicode需要21个比特。每个有效的Unicode值被称为编码点（code point）。
+
+在java中，字符串不是Unicode字符或者编码点的序列；而是编码单元(code unit)，UTF-16编码的16比特序列。
+
 ## 6、输入与输出
+
+从"标准输入流"读取不是那样简单，因为相应的System.in对象只能读取单个字节的方法。要读取字符串和数字，
+构建一个依附到System.in的Scanner。nextLine方法从输入读取一行。next读取单个单词。nextInt读取整型。
+nextDouble读取浮点数。可以使用hasNextLine、hasNext、hasNextInt、hasNextDouble方法读取是否有另外一行、
+另外一个单词、整数、浮点数。
+
+提示：需要读取密码是，你不想使用Scanner类，因为在终端输入是可见的。你可以用Console类代替。
 
 ## 7、控制流
 
