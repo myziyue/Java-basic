@@ -135,6 +135,17 @@ ArrayList类是泛类型类--一种带有类型参数的类。泛类型有个限
 
 基本类型与它们的包装类之间的转换对程序员完全透明的，但是==和!=操作符例外。==和!=操作符比较对象引用，而不是对象的内容。
 
+数组与数组列表的复制：数组使用静态方法Arrays.copyOf(),数组列表使用ArrayList<String> copiedFriends = new ArrayList<>(friends);
+构造函数也可以用来将数组复制到数组列表中，首先，你需要使用Arrays.asList方法，将数组包装到列表中。 
+
+填充数组：使用Arrays.fill(number, 0); // int[]数组，使用Collections.fill(friends, ""); // ArrayList<String>
+
+要对数组或数组列表排序，使用sort方法。Array.toString方法产生一个数组的字符串表示,数组列表直接输出即可。
+
+数组反转：Collections.reverse(names);随机打乱元素：Collections.shuffle(names);
+
+没有二维数的数组列表，但是你可以声明ArrayList<ArrayList<Integer>>类型的变量并自己构建行。
+
 ## 9、功能分解
 
  
